@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+header{
+    margin-top: 30px;
+    color: brown;
+}
+
+hr{
+    border: 3px solid brown;
+    margin: 30px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
