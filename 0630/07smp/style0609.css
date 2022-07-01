@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-/* bxsliderセットアップはじまり */
 .image{
-	width:100%;
+	width:100px;
 	height:400px;
 	background-position:center center;
 	background-size:cover;
@@ -23,12 +22,15 @@
 .i04{
 	background-image:url(./image/photo04.jpg);
 }
-/* bxsliderセットアップおわり */
 
-/* スマホ用スクリーンはじまり */
+h2{
+	text-align:center;
+	padding-top:20px;
+}
+
+/* スマホ用スクリーン */
 @media screen and (max-width: 600px){
 
-/* ハンバーガーメニューはじまり */
 .hamburger{
 	width:42px;
 	height:42px;
@@ -60,6 +62,8 @@
 	top: 30px;
 }
 
+/* ハンバーガーメニュー クリックした時 */
+
 .hamburger.active span:nth-child(1){
 	background-color:#000;
 	transform:rotate(-45deg);
@@ -73,9 +77,6 @@
 	top: 20px;
 }
 
-/* ハンバーガーメニューおわり */
-
-/* グローバルメニューはじまり */
 .globalMenuSp{
 	width:100%;
 	background-color: #d4cfd4;
@@ -115,21 +116,15 @@
     transform: translateX(0%);
 }
 
-/* グローバルメニューおわり */
-
 /* スマホ用スクリーンおわり */
 }
 
-/* PC用スクリーンはじまり */
+/* PC用スクリーン */
 @media screen and (min-width: 1025px){
-
-/* ハンバーガーメニューはじまり */
 .hamburger{
 	display:none;
 }
-/* ハンバーガーメニューおわり */
 
-/* WEBサイトヘッダーはじまり */
 header{
 	width:100%;
 	display:flex;
@@ -143,9 +138,7 @@ h1{
 nav{
 	width:60%;
 }
-/* WEBサイトヘッダーおわり */
 
-/* グローバルメニューはじまり */
 .globalMenuSp ul{
 	display:flex;
 	justify-content:flex-end;
@@ -169,7 +162,6 @@ nav{
 	background-color:#f5deb3;
 	border-bottom:3px solid red;
 }
-/* グローバルメニューおわり */
 
 /* PC用スクリーンおわり */
 }
