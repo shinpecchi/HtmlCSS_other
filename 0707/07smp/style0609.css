@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+
+.image{
+	width:100px;
+	height:400px;
+	background-position:center center;
+	background-size:cover;
+}
+
+.i01{
+	background-image:url(./image/photo01.jpg);
+}
+
+.i02{
+	background-image:url(./image/photo02.jpg);
+}
+
+.i03{
+	background-image:url(./image/photo03.jpg);
+}
+
+.i04{
+	background-image:url(./image/photo04.jpg);
+}
+
+h2{
+	text-align:center;
+	padding:40px 0;
+}
+
+.fadeUp{
+	animation-name:fadeUpAnime;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+
+@keyframes fadeUpAnime{
+	from{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* スマホ用スクリーン */
+@media screen and (max-width: 600px){
+
+.hamburger{
+	width:42px;
+	height:42px;
+	border:2px solid #bbb;
+	position:fixed;
+	top:20px;
+	right:20px;
+	z-index:3;
+}
+
+.hamburger span{
+	width:30px;
+	height:2px;
+	background-color:#bbb;
+	position:absolute;
+	left:6px;
+	transition: 2s;
+}
+
+.hamburger span:nth-child(1){
+	top: 10px;
+}
+
+.hamburger span:nth-child(2){
+	top: 20px;
+}
+
+.hamburger span:nth-child(3){
+	top: 30px;
+}
+
+/* ハンバーガーメニュー クリックした時 */
+
+.hamburger.active span:nth-child(1){
+	background-color:#000;
+	transform:rotate(-45deg);
+	top: 20px;
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3){
+	background-color:#000;
+	transform: rotate(45deg);
+	top: 20px;
+}
+
+.globalMenuSp{
+	width:100%;
+	background-color: #d4cfd4;
+	color: #fff;
+	text-align: center;
+	transform:translateX(100%);
+	position:fixed;
+	top:0;
+	z-index:2;
+	transition: 2s;
+}
+
+.globalMenuSp ul {
+	list-style:none;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.globalMenuSp ul li{
+	padding:0;
+	width:100%;
+}
+
+.globalMenuSp ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:1em 0;
+	display:block;
+}
+
+.globalMenuSp ul li a:hover{
+    background-color: #bbb;
+}
+
+.globalMenuSp.active{
+    transform: translateX(0%);
+}
+
+/* スマホ用スクリーンおわり */
+}
+
+/* PC用スクリーン */
+@media screen and (min-width: 1025px){
+.hamburger{
+	display:none;
+}
+
+header{
+	width:100%;
+	display:flex;
+	background-color:#fff;
+}
+
+h1{
+	width:40%;
+}
+
+nav{
+	width:60%;
+}
+
+.globalMenuSp ul{
+	display:flex;
+	justify-content:flex-end;
+	list-style:none;
+	font-size:1.2em;
+}
+
+.globalMenuSp ul li{
+	border-left:1px solid #c0c0c0;
+}
+
+.globalMenuSp ul li a{
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	color:#808080;
+}
+
+.globalMenuSp ul li a:hover{
+	color:red;
+	background-color:#f5deb3;
+	border-bottom:3px solid red;
+}
+
+/* PC用スクリーンおわり */
+}
