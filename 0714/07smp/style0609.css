@@ -48,6 +48,14 @@ h2{
 	}
 }
 
+footer{
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 2px solid #000;
+	/* 点線・破線設定 */
+	/* border-top: 2px dotted #000; */
+}
+
 /* スマホ用スクリーン */
 @media screen and (max-width: 600px){
 
