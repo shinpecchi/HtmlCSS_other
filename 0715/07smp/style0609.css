@@ -161,6 +161,7 @@ header{
 
 h1{
 	width:40%;
+	transition:1s all;
 }
 
 nav{
