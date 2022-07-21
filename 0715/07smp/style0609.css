@@ -59,6 +59,10 @@ footer{
 /* スマホ用スクリーン */
 @media screen and (max-width: 600px){
 
+h1{
+  text-align:center;
+}
+
 .hamburger{
 	width:42px;
 	height:42px;
@@ -161,7 +165,6 @@ header{
 
 h1{
 	width:40%;
-	transition:1s all;
 }
 
 nav{
